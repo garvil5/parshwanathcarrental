@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee"
+	version="2.5">
+	<servlet>
+		<servlet-name>login</servlet-name>
+		<servlet-class>com.amzi.servlets.LoginServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>login</servlet-name>
+		<url-pattern>/loginServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>update</servlet-name>
+		<servlet-class>com.amzi.servlets.updateResultServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>update</servlet-name>
+		<url-pattern>/updateResultServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>entry</servlet-name>
+		<servlet-class>com.amzi.servlets.entryPageServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>entry</servlet-name>
+		<url-pattern>/entryPageServlet</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>searchBY</servlet-name>
+		<servlet-class>com.amzi.servlets.searchByServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>searchBY</servlet-name>
+		<url-pattern>/searchByServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>save</servlet-name>
+		<servlet-class>com.amzi.servlets.entrySaveServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>save</servlet-name>
+		<url-pattern>/entrySaveServlet</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>entryPage.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
